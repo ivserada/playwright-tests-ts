@@ -21,6 +21,23 @@ npm run test:debug
 npm run test:report
 ```
 
+## Запуск в Docker
+
+Требуется Docker с Docker Compose v2. Официальный образ Playwright уже содержит Chromium и необходимые системные зависимости.
+
+```bash
+# Собрать образ и запустить все тесты
+npm run test:docker
+
+# Запустить отдельный файл
+docker compose -f docker-compose.local.yml run --rm --build playwright npx playwright test tests/example.spec.js
+
+# Запустить тесты по шаблону имени
+docker compose -f docker-compose.local.yml run --rm --build playwright npx playwright test --grep "standard login"
+```
+
+HTML-отчёт и результаты сохраняются в локальных каталогах `playwright-report` и `test-results`. После завершения прогона отчёт можно открыть командой `npm run test:report`.
+
 Тесты находятся в каталоге `tests`, настройки — в `playwright.config.js`.
 Пример теста не требует подключения к интернету.
 
