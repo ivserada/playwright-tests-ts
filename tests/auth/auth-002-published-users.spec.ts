@@ -1,7 +1,8 @@
 // spec: specs/auth.md
 // seed: tests/seed.spec.ts
 
-/*
+import { test, expect } from '@playwright/test';
+
 test.describe('Позитивные сценарии', () => {
   test('AUTH-002. Успешный вход всех опубликованных незаблокированных пользователей', async ({ browser }) => {
     const usernames = [
@@ -25,13 +26,20 @@ test.describe('Позитивные сценарии', () => {
         await page.getByRole('button', { name: 'Login', exact: true }).click();
 
         // 3. Проверить доступ к защищённому каталогу.
-        await expect(page, `Вход пользователя ${username}`).toHaveURL('https://www.saucedemo.com/inventory.html');
-        await expect(page.locator('[data-test="title"]'), `Заголовок каталога для ${username}`).toHaveText('Products');
-        await expect(page.locator('[data-test="inventory-container"]'), `Содержимое каталога для ${username}`).toBeVisible();
+        await expect(page, `Вход пользователя ${username}`).toHaveURL(
+          'https://www.saucedemo.com/inventory.html',
+        );
+        await expect(
+          page.locator('[data-test="title"]'),
+          `Заголовок каталога для ${username}`,
+        ).toHaveText('Products', { timeout: 15000 });
+        await expect(
+          page.locator('[data-test="inventory-container"]'),
+          `Содержимое каталога для ${username}`,
+        ).toBeVisible();
       } finally {
         await context.close();
       }
     }
   });
 });
-*/
