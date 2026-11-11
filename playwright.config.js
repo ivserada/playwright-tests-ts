@@ -10,7 +10,7 @@ module.exports = defineConfig({
   use: {
     browserName: "chromium",
     headless: true,
-    trace: "on-first-retry",
+    trace: "on",
     screenshot: "only-on-failure",
   },
 });
