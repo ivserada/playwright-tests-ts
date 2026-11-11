@@ -1,0 +1,50 @@
+{"version":10,"type":"context-options","origin":"testRunner","browserName":"","playwrightVersion":"1.64.1","options":{},"platform":"darwin","wallTime":1794393217281,"monotonicTime":560.925,"sdkLanguage":"javascript","testTimeout":30000,"annotations":[]}
+{"type":"before","callId":"kpfw@1","startTime":577.993,"class":"Test","method":"hook","title":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@2","parentId":"kpfw@1","startTime":578.197,"class":"Test","method":"hook","title":"beforeEach hook","params":{},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":4,"column":8}]}
+{"type":"before","callId":"kpfw@36","parentId":"kpfw@2","startTime":584.142,"class":"Test","method":"fixture","title":"Fixture \"browser\"","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@37","parentId":"kpfw@36","startTime":584.981,"class":"Test","method":"pw:api","title":"Launch browser","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@37","endTime":841.708,"annotations":[]}
+{"type":"after","callId":"kpfw@36","endTime":841.761,"annotations":[]}
+{"type":"before","callId":"kpfw@40","parentId":"kpfw@2","startTime":842.392,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@41","parentId":"kpfw@40","startTime":843.033,"class":"Test","method":"pw:api","title":"Create context","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@41","endTime":849.829,"annotations":[]}
+{"type":"after","callId":"kpfw@40","endTime":853.108,"annotations":[]}
+{"type":"before","callId":"kpfw@48","parentId":"kpfw@2","startTime":853.324,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@49","parentId":"kpfw@48","startTime":853.668,"class":"Test","method":"pw:api","title":"Create page","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@49","endTime":1053.803,"annotations":[]}
+{"type":"after","callId":"kpfw@48","endTime":1053.828,"annotations":[]}
+{"type":"before","callId":"kpfw@51","parentId":"kpfw@2","startTime":1054.381,"class":"Test","method":"pw:api","title":"Navigate","subtitle":"www.saucedemo.com/","params":{"url":"https://www.saucedemo.com/"},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":5,"column":16}]}
+{"type":"after","callId":"kpfw@51","endTime":1539.05,"annotations":[]}
+{"type":"after","callId":"kpfw@2","endTime":1539.08,"annotations":[]}
+{"type":"after","callId":"kpfw@1","endTime":1539.181,"annotations":[]}
+{"type":"before","callId":"kpfw@53","startTime":1541.432,"class":"Test","method":"pw:api","title":"Fill \"locked_out_user\"","subtitle":"locator('[data-test=\"username\"]')","params":{"locator":"locator('[data-test=\"username\"]')","value":"locked_out_user"},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":27,"column":50}]}
+{"type":"after","callId":"kpfw@53","endTime":1578.587,"annotations":[]}
+{"type":"before","callId":"kpfw@55","startTime":1579.076,"class":"Test","method":"pw:api","title":"Fill \"secret_sauce\"","subtitle":"locator('[data-test=\"password\"]')","params":{"locator":"locator('[data-test=\"password\"]')","value":"secret_sauce"},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":28,"column":50}]}
+{"type":"after","callId":"kpfw@55","endTime":1617.46,"annotations":[]}
+{"type":"before","callId":"kpfw@57","startTime":1617.968,"class":"Test","method":"pw:api","title":"Click","subtitle":"locator('[data-test=\"login-button\"]')","params":{"locator":"locator('[data-test=\"login-button\"]')"},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":29,"column":54}]}
+{"type":"after","callId":"kpfw@57","endTime":1699.441,"annotations":[]}
+{"type":"before","callId":"kpfw@59","startTime":1701.22,"class":"Test","method":"expect","title":"Expect \"toHaveURL\"","params":{"expected":"https://www.saucedemo.com/"},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":31,"column":24}]}
+{"type":"after","callId":"kpfw@59","endTime":1705.589,"annotations":[]}
+{"type":"before","callId":"kpfw@61","startTime":1705.995,"class":"Test","method":"expect","title":"Expect \"toContainText\"","subtitle":"locator('[data-test=\"error\"]')","params":{"locator":"locator('[data-test=\"error\"]')","expected":"Username and password do not match"},"stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":32,"column":55}]}
+{"type":"after","callId":"kpfw@61","endTime":6715.954,"annotations":[],"error":{"name":"","message":"Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Username and password do not match\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Sorry, this user has been locked out.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Sorry, this user has been locked out.\"\u001b[22m\n","stack":"Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Username and password do not match\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Sorry, this user has been locked out.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Sorry, this user has been locked out.\"\u001b[22m\n\n    at /Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts:32:55"}}
+{"type":"error","message":"Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Username and password do not match\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Sorry, this user has been locked out.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('[data-test=\"error\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <h3 role=\"alert\" data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Sorry, this user has been locked out.\"\u001b[22m\n","stack":[{"file":"/Users/ivan/js_ts_course/playwright-tests-ts/tests/homework-19.spec.ts","line":32,"column":55}]}
+{"type":"before","callId":"kpfw@63","startTime":6716.418,"class":"Test","method":"hook","title":"After Hooks","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@65","parentId":"kpfw@63","startTime":6759.066,"class":"Test","method":"fixture","title":"Fixture \"page\"","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@65","endTime":6759.139,"annotations":[]}
+{"type":"before","callId":"kpfw@66","parentId":"kpfw@63","startTime":6759.236,"class":"Test","method":"fixture","title":"Fixture \"context\"","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@72","parentId":"kpfw@66","startTime":6779.369,"class":"Test","method":"pw:api","title":"Close context","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@72","endTime":6784.873,"annotations":[]}
+{"type":"after","callId":"kpfw@66","endTime":6784.919,"annotations":[]}
+{"type":"before","callId":"kpfw@79","startTime":6786.402,"class":"Test","method":"test.attach","title":"Attach \"error-context\"","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@79","endTime":6786.407,"attachments":[{"name":"error-context","contentType":"text/markdown","file":"attachments/8f12fc5bb1f716f03ce821d3c6645c92c6045693"}]}
+{"type":"after","callId":"kpfw@63","endTime":6788.771,"attachments":[{"name":"screenshot","contentType":"image/png","file":"attachments/3aa732cb7f7df6529cda7195c2ace39e5c9c0e23"}],"annotations":[]}
+{"type":"before","callId":"kpfw@108","startTime":6788.838,"class":"Test","method":"hook","title":"Worker Cleanup","params":{},"stack":[]}
+{"type":"before","callId":"kpfw@113","parentId":"kpfw@108","startTime":6789.206,"class":"Test","method":"fixture","title":"Fixture \"browser\"","params":{},"stack":[]}
+{"type":"after","callId":"kpfw@113","endTime":6803.656,"annotations":[]}
+{"type":"before","callId":"kpfw@117","parentId":"kpfw@108","startTime":6803.882,"class":"Test","method":"fixture","title":"Fixture \"browserName\"","params":{},"stack":[{"file":"project#","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"kpfw@117","endTime":6803.889,"annotations":[]}
+{"type":"before","callId":"kpfw@118","parentId":"kpfw@108","startTime":6803.892,"class":"Test","method":"fixture","title":"Fixture \"screenshot\"","params":{},"stack":[{"file":"project#","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"kpfw@118","endTime":6803.895,"annotations":[]}
+{"type":"before","callId":"kpfw@122","parentId":"kpfw@108","startTime":6804.069,"class":"Test","method":"fixture","title":"Fixture \"headless\"","params":{},"stack":[{"file":"project#","line":1,"column":1}],"group":"configuration"}
+{"type":"after","callId":"kpfw@122","endTime":6804.072,"annotations":[]}
+{"type":"after","callId":"kpfw@108","endTime":6804.144,"annotations":[]}

@@ -6,7 +6,7 @@ module.exports = defineConfig({
   forbidOnly: Boolean(process.env.CI),
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [["list"], ["html", { open: "never" }]],
+  reporter: [["list"], ["html", { outputFolder: "playwright-report", open: "never" }]],
   use: {
     browserName: "chromium",
     headless: true,
