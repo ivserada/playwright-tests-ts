@@ -39,6 +39,20 @@ docker compose -f docker-compose.local.yml run --rm --build playwright npx playw
 HTML-отчёт и результаты сохраняются в локальных каталогах `playwright-report` и `test-results`. После завершения прогона отчёт можно открыть командой `npm run test:report`.
 
 Тесты находятся в каталоге `tests`, настройки — в `playwright.config.js`.
+
+## Проекты (ДЗ 21)
+
+- `default` — существующие тесты (the-internet, herokuapp, login).
+- `setup-problem` — setup-тест из `global-setup.ts`: логинит `problem_user` на SauceDemo и сохраняет сессию в `problem-user-state.json`.
+- `problem-tests` — тесты из `tests/problem/` в сохранённом состоянии `problem_user` (зависит от `setup-problem`).
+
+```bash
+# Запустить только setup + тесты problem-tests
+npx playwright test --project=setup-problem --project=problem-tests
+
+# Запустить только тест с тегом @problem
+npx playwright test --project=problem-tests --grep "@problem"
+```
 Пример теста не требует подключения к интернету.
 
 Для установки дополнительных браузеров выполните:

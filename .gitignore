@@ -1,4 +1,6 @@
 node_modules/
+storageState.json
+problem-user-state.json
 test-results/
 playwright-report/
 blob-report/

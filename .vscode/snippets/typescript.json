@@ -1,0 +1,15 @@
+{
+  "Playwright spec boilerplate": {
+    "prefix": "pwspec",
+    "body": [
+      "import { test, expect } from '@playwright/test';",
+      "",
+      "test.describe('$1', () => {",
+      "\ttest('$2', async ({ page }) => {",
+      "\t\tawait page.goto('/');",
+      "\t});",
+      "});"
+    ],
+    "description": "Playwright .spec.ts: импорт test/expect + каркас test.describe"
+  }
+}
