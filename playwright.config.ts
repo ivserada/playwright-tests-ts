@@ -14,7 +14,7 @@ export default defineConfig({
     browserName: "chromium",
     headless: true,
     baseURL: "https://the-internet.herokuapp.com",
-    trace: "on-first-retry",
+    trace: "on",
     screenshot: "only-on-failure",
   },
   projects: [
